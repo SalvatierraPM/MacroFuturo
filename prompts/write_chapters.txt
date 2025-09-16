@@ -1,0 +1,1 @@
+Escribe escenas que muestran consecuencias; prohíbe infodumps; inserta pistas visibles.

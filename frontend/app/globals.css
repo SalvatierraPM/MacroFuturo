@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background: theme('colors.background');
+  color: white;
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+a {
+  color: theme('colors.accent');
+}
+
+button {
+  transition: background 0.2s ease, transform 0.2s ease;
+}

@@ -1,0 +1,1 @@
+Chequea plausibilidad (energía, seguridad, ergonomía, regulación, $/unidad). Devuelve flags y fixes.

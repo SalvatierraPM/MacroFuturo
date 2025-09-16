@@ -1,0 +1,49 @@
+scenario: |
+  id: S-VAL-2025-Q
+  axes:
+    compute_energy: high
+    governance_security: robust
+    meaning_adoption: medium
+  quadrant: Rieles Estables
+  forks:
+    - id: F-1M-50x
+      active: true
+    - id: F-WSL5
+      active: false
+    - id: F-5GW
+      active: true
+  tech_enabled:
+    - Civic Autopilot
+    - Agent Passport
+    - PQC Salud
+  personas_weights:
+    P1: 70
+    P2: 40
+    P3: 50
+    P4: 65
+    P5: 45
+  city: Valparaíso
+  era: 2025–2035
+  title: "MacroFuturo — Tomo I: Rieles Estables"
+world: |
+  world_id: W-Valparaiso-2025-2035
+  nodes: [P, H, V, E, C, O]
+  stack:
+    identity: ["Agent Passport", "PQC-ready"]
+    data_fabric: ["evidence_trails", "ledgers"]
+  policy:
+    civic_autopilot:
+      status: pilot_v2
+      city: Valparaíso
+    energy:
+      microgrids: true
+      waste_heat: district_heating
+  characters:
+    - id: ch_rita
+      role: "paramédica"
+      drives: ["cuidado", "competencia técnica"]
+      constraints: ["turnos nocturnos", "madre dependiente"]
+    - id: ch_ian
+      role: "operador de red"
+      drives: ["continuidad", "orgullo profesional"]
+      constraints: ["capacidad limitada", "licencia social"]

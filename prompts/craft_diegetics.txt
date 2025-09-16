@@ -1,0 +1,1 @@
+Redacta memo sectorial, MOU energía, postmortem coherentes con world.yaml; agrega anexo policy-as-code en YAML.
