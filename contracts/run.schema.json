@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://macrofuturo.dev/schemas/run.schema.json",
+  "title": "Generation Run Metadata",
+  "type": "object",
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "seed": {
+      "type": "integer"
+    },
+    "inputs_ref": {
+      "type": "string",
+      "description": "Path to stored scenario file"
+    },
+    "world_ref": {
+      "type": "string",
+      "description": "Path to stored world file"
+    },
+    "quadrant": {
+      "type": "string"
+    },
+    "forks": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tech": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "personas": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "integer"
+      }
+    },
+    "outputs": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    }
+  },
+  "required": ["run_id", "seed", "inputs_ref", "world_ref"],
+  "additionalProperties": false
+}

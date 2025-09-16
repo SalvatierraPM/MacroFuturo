@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://macrofuturo.dev/schemas/ledger.schema.json",
+  "title": "Evidence Ledger",
+  "type": "object",
+  "properties": {
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Stable identifier for the technical claim"
+          },
+          "statement": {
+            "type": "string",
+            "description": "Concise statement of the claim as it appears in the fiction"
+          },
+          "because": {
+            "type": "array",
+            "description": "Causal steps or reasoning supporting the statement",
+            "items": {
+              "type": "object",
+              "properties": {
+                "step": {
+                  "type": "string",
+                  "description": "Single causal step"
+                }
+              },
+              "required": ["step"],
+              "additionalProperties": false
+            },
+            "minItems": 1
+          },
+          "signals": {
+            "type": "array",
+            "description": "Observable signals characters would notice",
+            "items": {
+              "type": "string"
+            }
+          },
+          "costs": {
+            "type": "array",
+            "description": "Costs or trade-offs incurred",
+            "items": {
+              "type": "string"
+            }
+          },
+          "source": {
+            "type": "array",
+            "description": "Source systems or documents referenced",
+            "items": {
+              "type": "string"
+            }
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1,
+            "description": "Author confidence (0-1)"
+          }
+        },
+        "required": ["id", "statement", "because"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": ["claims"],
+  "additionalProperties": false
+}

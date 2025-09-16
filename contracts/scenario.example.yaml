@@ -1,0 +1,26 @@
+id: S-VAL-2025-Q
+axes:
+  compute_energy: high
+  governance_security: robust
+  meaning_adoption: medium
+quadrant: Rieles Estables
+forks:
+  - id: F-1M-50x
+    active: true
+  - id: F-WSL5
+    active: false
+  - id: F-5GW
+    active: true
+tech_enabled:
+  - Civic Autopilot
+  - Agent Passport
+  - PQC Salud
+personas_weights:
+  P1: 70
+  P2: 40
+  P3: 50
+  P4: 65
+  P5: 45
+city: Valparaíso
+era: 2025–2035
+title: "MacroFuturo — Tomo I: Rieles Estables"

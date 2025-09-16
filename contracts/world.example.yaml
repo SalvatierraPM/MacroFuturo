@@ -1,0 +1,21 @@
+world_id: W-Valparaiso-2025-2035
+nodes: [P, H, V, E, C, O]
+stack:
+  identity: ["Agent Passport", "PQC-ready"]
+  data_fabric: ["evidence_trails", "ledgers"]
+policy:
+  civic_autopilot:
+    status: pilot_v2
+    city: Valparaíso
+  energy:
+    microgrids: true
+    waste_heat: district_heating
+characters:
+  - id: ch_rita
+    role: "paramédica"
+    drives: ["cuidado", "competencia técnica"]
+    constraints: ["turnos nocturnos", "madre dependiente"]
+  - id: ch_ian
+    role: "operador de red"
+    drives: ["continuidad", "orgullo profesional"]
+    constraints: ["capacidad limitada", "licencia social"]
